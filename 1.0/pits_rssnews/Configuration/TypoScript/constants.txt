@@ -1,0 +1,39 @@
+plugin.tx_pitsrssnews {
+	view {
+		# cat=plugin.tx_pitsrssnews/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:pits_rssnews/Resources/Private/Templates/
+		# cat=plugin.tx_pitsrssnews/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:pits_rssnews/Resources/Private/Partials/
+		# cat=plugin.tx_pitsrssnews/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:pits_rssnews/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_pitsrssnews//a; type=string; label=Default storage PID
+		storagePid = 
+	}
+	settings {
+    	feedURL = 
+    	newsCount =
+    	cropTitle =
+    	cropDesc = 
+    	rssfeedHead =
+    	newsDivider = 
+    	autoplay = 
+    	includeJSlib = 1
+	}
+}
+
+module.tx_pitsrssnews {
+	view {
+		# cat=module.tx_pitsrssnews/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:pits_rssnews/Resources/Private/Backend/Templates/
+		# cat=module.tx_pitsrssnews/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:pits_rssnews/Resources/Private/Backend/Partials/
+		# cat=module.tx_pitsrssnews/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:pits_rssnews/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_pitsrssnews//a; type=string; label=Default storage PID
+		storagePid = 
+	}
+}

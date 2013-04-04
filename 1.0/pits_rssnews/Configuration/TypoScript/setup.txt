@@ -1,0 +1,56 @@
+plugin.tx_pitsrssnews {
+	view {
+		templateRootPath = {$plugin.tx_pitsrssnews.view.templateRootPath}
+		partialRootPath = {$plugin.tx_pitsrssnews.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_pitsrssnews.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_pitsrssnews.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+	settings {
+    	feedURL = {$plugin.tx_pitsrssnews.settings.feedURL}
+    	newsCount = {$plugin.tx_pitsrssnews.settings.newsCount}
+    	cropTitle = {$plugin.tx_pitsrssnews.settings.cropTitle}
+    	cropDesc = {$plugin.tx_pitsrssnews.settings.cropDesc}
+    	rssfeedHead = {$plugin.tx_pitsrssnews.settings.rssfeedHead}
+    	newsDivider = {$plugin.tx_pitsrssnews.settings.newsDivider}
+    	autoplay = {$plugin.tx_pitsrssnews.settings.autoplay}
+    	includeJSlib = {$plugin.tx_pitsrssnews.settings.includeJSlib}
+	}
+}
+
+plugin.tx_pitsrssnews._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-pits-rssnews table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-pits-rssnews table th {
+		font-weight:bold;
+	}
+
+	.tx-pits-rssnews table td {
+		vertical-align:top;
+	}
+)
+
+ # Module configuration
+module.tx_pitsrssnews {
+	persistence {
+		storagePid = {$module.tx_pitsrssnews.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_pitsrssnews.view.templateRootPath}
+		partialRootPath = {$module.tx_pitsrssnews.view.partialRootPath}
+		layoutRootPath = {$module.tx_pitsrssnews.view.layoutRootPath}
+	}
+}

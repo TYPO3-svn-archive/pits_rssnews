@@ -1,0 +1,48 @@
+
+#pits_rss {
+    font-family: verdana;
+    font-size: 12px;
+    width:auto;
+}
+#pits_rss ul li {list-style: none;} 
+
+.pits_rss_head h3 {
+    font-family: verdana;
+    font-size: 15px;
+}
+.rss_desc a{
+    color: #777777;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 4px 0;
+    width: 100%;
+    text-decoration: none;
+}
+.rss_title {
+    margin: 3px 0;
+}
+.rss_title a{
+	color: #000000;
+	text-decoration: none;
+}
+.rss_hbar hr{
+    background: none repeat scroll 0 0 transparent;
+    border-color: #AEAEAE;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    color: #AEAEAE;
+    margin: 3px;  
+}
+.rss_date{
+    color: #B6B6B6;
+    font-size: 11px;
+    font-style: italic;
+    padding: 4px 0;
+    width: 100%;
+    }
+.rss_hbar {
+    clear: left;
+}
+    
+ 

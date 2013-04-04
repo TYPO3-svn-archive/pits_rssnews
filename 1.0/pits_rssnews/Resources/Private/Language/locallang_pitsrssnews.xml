@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for backend module RSS News Feed belonging to extension 'pits_rssnews'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+		<label index="mlang_tabs_tab">RSS News Feed</label>
+			<label index="mlang_labels_tabdescr"></label>
+			<label index="mlang_labels_tablabel"></label>
+			<label index="ff.sheetTitle1">Enter URL</label>
+		    <label index="ff.sheetTitle2">Settings</label>
+			<label index="ff.feed_url">Enter the URL</label>
+			<label index="ff.news_count">Count of Displaying News</label>
+			<label index="ff.desc_title">Crop News Title (No.of words)</label>
+			<label index="ff.desc_crop">Crop News Description (No.of words)</label>
+			<label index="ff.feed_header">Display Feed Header</label>
+			<label index="ff.content_div">Content Divider</label>
+			<label index="ff.autoplay">Autoplay</label>
+		</languageKey>
+	</data>
+</T3locallang>
