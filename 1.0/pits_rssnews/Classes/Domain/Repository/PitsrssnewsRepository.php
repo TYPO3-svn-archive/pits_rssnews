@@ -28,7 +28,8 @@
  *
  *
  * @package pits_rssnews
- * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+ * @license http://www.gnu.org/licenses/gpl.html
+ * GNU General Public License, version 3 or later
  *
  */
 class Tx_PitsRssnews_Domain_Repository_PitsrssnewsRepository extends Tx_Extbase_Persistence_Repository {
