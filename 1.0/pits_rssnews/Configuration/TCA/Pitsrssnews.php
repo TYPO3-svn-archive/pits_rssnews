@@ -6,10 +6,16 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_pitsrssnews_domain_model_pitsrssnews'] = array(
 	'ctrl' => $TCA['tx_pitsrssnews_domain_model_pitsrssnews']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, news',
+		'showRecordFieldList' => 'sys_language_uid,
+								 l10n_parent,
+								 l10n_diffsource,
+								 hidden, news',
 	),
 	'types' => array(
-		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, news,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime, endtime'),
+		'1' => array('showitem' => 'sys_language_uid;;;;1-1-1,
+									l10n_parent, l10n_diffsource, hidden;;1,
+									news,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,starttime,
+									endtime'),
 	),
 	'palettes' => array(
 		'1' => array('showitem' => ''),
@@ -38,7 +44,8 @@ $TCA['tx_pitsrssnews_domain_model_pitsrssnews'] = array(
 					array('', 0),
 				),
 				'foreign_table' => 'tx_pitsrssnews_domain_model_pitsrssnews',
-				'foreign_table_where' => 'AND tx_pitsrssnews_domain_model_pitsrssnews.pid=###CURRENT_PID### AND tx_pitsrssnews_domain_model_pitsrssnews.sys_language_uid IN (-1,0)',
+				'foreign_table_where' => 'AND tx_pitsrssnews_domain_model_pitsrssnews.pid=###CURRENT_PID### 
+				   						  AND tx_pitsrssnews_domain_model_pitsrssnews.sys_language_uid IN (-1,0)',
 			),
 		),
 		'l10n_diffsource' => array(
