@@ -10,7 +10,10 @@ Tx_Extbase_Utility_Extension::configurePlugin(
 		'Pitsrssnews' => 'list, show',
 		
 	),
-	// non-cacheable actions
+
+/**
+ * non-cacheable actions
+ */	
 	array(
 		'Pitsrssnews' => 'list, show',
 		
