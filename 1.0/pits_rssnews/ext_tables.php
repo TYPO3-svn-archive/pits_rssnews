@@ -9,33 +9,10 @@ Tx_Extbase_Utility_Extension::registerPlugin(
 	'RSS News Feed'
 );
 $extensionName = t3lib_div::underscoredToUpperCamelCase($_EXTKEY);
-if (TYPO3_MODE === 'BE') {
-
-	/**
-	 * Registers a Backend Module
-	 */
-/*
-	Tx_Extbase_Utility_Extension::registerModule(
-		$_EXTKEY,
-		'web',	 // Make module a submodule of 'web'
-		'pitsrssnews',	// Submodule key
-		'',						// Position
-		array(
-			'Pitsrssnews' => 'list,xmltoarray',
-		),
-		array(
-			'access' => 'user,group',
-			'icon'   => 'EXT:' . $_EXTKEY . '/ext_icon.gif',
-			'labels' => 'LLL:EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_pitsrssnews.xml',
-		)
-	);
-*/
-
-}
-
 t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'RSS News Feed');
 
-t3lib_extMgm::addLLrefForTCAdescr('tx_pitsrssnews_domain_model_pitsrssnews', 'EXT:pits_rssnews/Resources/Private/Language/locallang_csh_tx_pitsrssnews_domain_model_pitsrssnews.xml');
+t3lib_extMgm::addLLrefForTCAdescr('tx_pitsrssnews_domain_model_pitsrssnews',
+'EXT:pits_rssnews/Resources/Private/Language/locallang_csh_tx_pitsrssnews_domain_model_pitsrssnews.xml');
 t3lib_extMgm::allowTableOnStandardPages('tx_pitsrssnews_domain_model_pitsrssnews');
 $TCA['tx_pitsrssnews_domain_model_pitsrssnews'] = array(
 	'ctrl' => array(
@@ -64,7 +41,7 @@ $TCA['tx_pitsrssnews_domain_model_pitsrssnews'] = array(
 	),
 );
 
-$pluginSignature = str_replace('_','',$_EXTKEY).'_'.pitsrssnews;
+$pluginSignature = str_replace('_','',$_EXTKEY).'_pitsrssnews';
 $TCA['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
 t3lib_extMgm::addPiFlexFormValue($pluginSignature, 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/flexform.xml');
 
